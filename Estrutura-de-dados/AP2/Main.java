@@ -52,7 +52,7 @@ public class Main {
                     break;
                 }
                 case 8: {
-                  System.out.println("Digite o valor:\n");
+                  System.out.println("Digite o índice desejado:\n");
                     int value = tc.nextInt();
                     numeros.obterElementoNaPosicao(value);
                     break;

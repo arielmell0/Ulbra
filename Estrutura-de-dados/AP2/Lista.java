@@ -84,17 +84,17 @@ public class Lista {
     System.out.println(fim.dado);
   }
 
-  public int obterElementoNaPosicao(int posicao) {
+  public void obterElementoNaPosicao(int posicao) {
     if (posicao < 0 || posicao >= quantidade) {
       throw new IndexOutOfBoundsException("Posição inválida na lista.");
     }
-
+  
     Elemento elementoAtual = inicio;
     for (int i = 0; i < posicao; i++) {
       elementoAtual = elementoAtual.prox;
     }
-
-    return elementoAtual.dado;
-  }
+  
+    System.out.println(elementoAtual.dado);
+  }  
 
 }
